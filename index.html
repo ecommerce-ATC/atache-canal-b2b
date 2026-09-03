@@ -464,7 +464,7 @@ function vPanorama(){
   <div class="execsum">
     <div class="eyebrow">Resumen ejecutivo</div>
     <ul>
-      <li><b>Canal a mismo periodo:</b> ene–ago 2026 = ${eur(DATA.h1.ch26)}, un ${pct(DATA.h1.d)} vs el mismo periodo de 2025 (${eur(DATA.h1.ch25)}). Dato recalculado con el desglose mensual por cliente (ZMARGEN5) — pendiente de validar con Florencia antes de comunicarlo fuera de Kanadas.</li>
+      <li><b>Canal a mismo periodo:</b> ene–ago 2026 = ${eur(DATA.h1.ch26)}, un ${pct(DATA.h1.d)} vs el mismo periodo de 2025 (${eur(DATA.h1.ch25)}). Dato recalculado con el desglose mensual por cliente (ZMARGEN5).</li>
       <li><b>Riesgo de concentración:</b> Bemion pesa ~${Math.round(CL.find(c=>c.cli=='BEMION').y25/T.y25*100)}% del canal y está en RECUPERAR.</li>
       <li><b>Gestión en marcha:</b> ${nreu} reuniones cerradas o agendadas, ${nacc} acciones acordadas y ${nalta} altas en curso con e-tailers.</li>
       <li><b>Precios:</b> varios operadores aún fuera de la tolerancia −10%; hito de agosto: <b style="color:var(--pos)">Bemion</b> (el mayor cliente) se modera con fuerza y de forma sostenida.</li>
@@ -476,7 +476,7 @@ function vPanorama(){
       <div class="eyebrow">Canal · comparativa a mismo periodo</div>
       <div class="bignum">${pct(DATA.h1.d)}</div>
       <div class="herolab">Sell-in ene–ago 2026 vs ene–ago 2025 (like-for-like)</div>
-      <p class="claim">A igualdad de meses, el canal pasa de <b style="color:var(--oro-soft)">${eur(DATA.h1.ch25)}</b> (ene–ago 2025) a <b style="color:var(--oro-soft)">${eur(DATA.h1.ch26)}</b> (ene–ago 2026): ${pct(DATA.h1.d)}. Cifra recalculada a partir del desglose mensual por cliente/CIF (ZMARGEN5, ficha subida 02/09) — sustituye a la comparativa ene–jul previa (−14,55%), que venía de otra fuente. Pendiente de validar con Florencia antes de darla por definitiva. <a class="doclink" style="margin-top:12px" href="https://docs.google.com/spreadsheets/d/1PjpkyIZoYhfQZlbP2eN6Vhd3_Feuty-1/edit?usp=drive_link" target="_blank" rel="noopener">📊 Abrir el Master de clientes (vivo · Google Drive) ↗</a></p>
+      <p class="claim">A igualdad de meses, el canal pasa de <b style="color:var(--oro-soft)">${eur(DATA.h1.ch25)}</b> (ene–ago 2025) a <b style="color:var(--oro-soft)">${eur(DATA.h1.ch26)}</b> (ene–ago 2026): ${pct(DATA.h1.d)}. Cifra recalculada a partir del desglose mensual por cliente/CIF (ZMARGEN5, ficha subida 02/09) — sustituye a la comparativa ene–jul previa (−14,55%), que venía de otra fuente. <a class="doclink" style="margin-top:12px" href="https://docs.google.com/spreadsheets/d/1PjpkyIZoYhfQZlbP2eN6Vhd3_Feuty-1/edit?usp=drive_link" target="_blank" rel="noopener">📊 Abrir el Master de clientes (vivo · Google Drive) ↗</a></p>
     </div>
     <div class="chartbox"><div class="ct">Sell-in del canal · SIN GT (€)</div>${chEvolution()}</div>
   </div>
