@@ -549,19 +549,14 @@ function chPricesBar(){
 }
 function calRoadmap(){
   const items=[{mo:'SEP',cli:'Farmacia Barata',desc:'Aniversario Farmacia Barata: cupón ATACHE15 + acciones de visibilidad, todo septiembre. Retirada la 2ª unidad al 20% tras nuestra petición; los informes confirman que ya respetan precios.'},
-   {mo:'SEP',cli:'Finalizada (7–20/09)',desc:'2ª unidad al 30% — Bemion, Dermofarma, Naturitas, IUNatural, DosFarma, Farma2Go, Farmacias Direct, Promofarma. Bemion: +104% con la promo ya corregida (desde el 14/09); la retiró el 21/09. Pendientes los informes de ventas de Dermofarma, Naturitas, Farmacias Direct y Promofarma.'},
-   {mo:'SEP',cli:'Atida (Mifarma)',desc:'2ª unidad al 30% y Campaña Antimanchas Atida Mifarma (14–20/09), finalizadas.'},
-   {mo:'SEP',cli:'Varios ecomms',desc:'Muestras Pro Acid Complex Cream enviadas — Bemion, Atida, Farmacia Barata, Farmacias Direct, Promofarma y Farma2Go (1.000 sobres c/u).'},
+   {mo:'SEP',cli:'Finalizada (7–20/09)',desc:'2ª unidad al 30% — Bemion, Dermofarma, Naturitas, IUNatural, DosFarma, Farma2Go, Farmacias Direct, Promofarma. Bemion: +104% con la promo ya corregida (desde el 14/09); la retiró el 21/09.'},
+   {mo:'SEP',cli:'Atida (Mifarma)',desc:'2ª unidad al 30% (14–20/09), finalizada.'},
    {mo:'SEP',cli:'DosFarma',desc:'Días Flash del 26/09 al 04/10, 20% de descuento mediante cupón (confirmados).'},
    {mo:'OCT',cli:'Atida',desc:'Atida Days del 03 al 11/10, 20% de descuento mediante cupón (confirmados).'},
    {mo:'OCT',cli:'Farma2Go',desc:'GoFest 04–18/10, confirmado con un 20% de descuento directo (sustituye a la propuesta anterior de 2ª unidad al 40%).'},
-   {mo:'OCT',cli:'Naturitas',desc:'Newsletter/Banner de Awareness, 13–31/10 (disponible, sin confirmar; octubre es mes top para Naturitas).'},
    {mo:'OCT',cli:'Todos los ecomms',desc:'Semanas del 19/10 al 01/11 bloqueadas por petición de Atache.'},
    {mo:'NOV',cli:'Atida (Mifarma)',desc:'Black Box: 1.000 uds Green Tea Mask 50 ml, envío en dos tramos (02–07/11 y 13–15/11), con paquete de visibilidad asociado (web, RRSS, influencer, email, paid media) — pendiente confirmar con Elena el reparto de canales entre tramos.'},
-   {mo:'NOV',cli:'Todos los ecomms',desc:'Periodo Black Friday (semanas del 23/11 al 06/12): descuento máximo del 25%.'},
-   {mo:'NOV',cli:'Naturitas',desc:'Black Friday / Cyber Monday, ~10% dto, 23–30/11 (disponible). Pendiente de validar con Zahira.'},
-   {mo:'NOV',cli:'Dermofarma',desc:'Black Friday, 23–30/11 (fecha estimada según Anna, sin confirmar).'},
-   {mo:'DIC',cli:'Naturitas',desc:'Acción previa a Navidad, 07–20/12 (disponible) — detalle y descuento aún por definir.'}];
+   {mo:'NOV',cli:'Todos los ecomms',desc:'Periodo Black Friday (semanas del 23/11 al 06/12): descuento máximo del 25%.'}];
   const months=[];items.forEach(it=>{let g=months.find(m=>m.mo==it.mo);if(!g){g={mo:it.mo,items:[]};months.push(g);}g.items.push(it);});
   return `<div class="roadmap">`+months.map(g=>`<div class="rmonth"><div class="rmoh"><span class="mo">${g.mo}</span><span class="yr">2026</span></div>`+g.items.map(it=>`<div class="rmit"><div class="rc">${it.cli}</div><div class="rd">${it.desc}</div></div>`).join('')+`</div>`).join('')+`</div>`;
 }
